@@ -35,5 +35,4 @@ jobs:
     - name: Deploy to Lambda
       working-directory: ./
       run: dotnet lambda deploy-serverless
-      with:
-        region: us-east-1
+    
