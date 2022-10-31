@@ -34,5 +34,5 @@ jobs:
       run: dotnet build --no-restore ProjectExampleLambdaFunction.sln
     - name: Deploy to Lambda
       working-directory: ./
-      run: dotnet lambda deploy-serverless --region us-east-1
+      run: dotnet lambda deploy-serverless --region us-east-1 --bucketName teste321654987
     
