@@ -29,10 +29,9 @@ jobs:
     - name: AWS CLI
       run: dotnet tool install -g Amazon.Lambda.Tools
     - name: Restore dependencies
-      run: dotnet restore ProjectExampleLambdaFunction.sln
+      run: dotnet restore 
     - name: Build
-      run: dotnet build --no-restore ProjectExampleLambdaFunction.sln
+      run: dotnet build --no-restore 
     - name: Deploy to Lambda
       working-directory: ./
       run: dotnet lambda deploy-serverless --region us-east-1 --s3-bucket teste321654987 --function-name ExampleLambda-AspNetCoreFunction-mRW9uolCYJPZ
-    
